@@ -59,7 +59,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="ztd-pb-vGw"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="81H-ib-5Q8">
                             <connections>
-                                <segue destination="ZU5-Wa-HXh" kind="presentation" id="Kyp-E0-Nf6"/>
+                                <segue destination="ZU5-Wa-HXh" kind="presentation" identifier="AddWeatherCityViewController" id="Kyp-E0-Nf6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,16 +76,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEZ-g1-Vul">
-                                <rect key="frame" x="20" y="89" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter: City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pEZ-g1-Vul">
+                                <rect key="frame" x="20" y="81" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KA-BC-FIF">
-                                <rect key="frame" x="180" y="155" width="56" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="vc4-MH-2lI"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KA-BC-FIF">
+                                <rect key="frame" x="156" y="123" width="102" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
@@ -95,14 +94,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1g0-kB-k7J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="pEZ-g1-Vul" firstAttribute="trailing" secondItem="6fI-YY-del" secondAttribute="trailingMargin" id="Cbx-db-AuT"/>
-                            <constraint firstItem="6KA-BC-FIF" firstAttribute="leading" secondItem="1g0-kB-k7J" secondAttribute="leading" constant="180" id="Fxj-Jc-nPn"/>
-                            <constraint firstItem="pEZ-g1-Vul" firstAttribute="leading" secondItem="6fI-YY-del" secondAttribute="leadingMargin" id="Nj6-E2-pJd"/>
-                            <constraint firstItem="6KA-BC-FIF" firstAttribute="top" secondItem="pEZ-g1-Vul" secondAttribute="bottom" constant="32" id="RUg-ZF-p4R"/>
-                            <constraint firstItem="pEZ-g1-Vul" firstAttribute="top" secondItem="1g0-kB-k7J" secondAttribute="top" constant="33" id="dF3-Dy-z9w"/>
-                            <constraint firstItem="1g0-kB-k7J" firstAttribute="bottom" secondItem="6KA-BC-FIF" secondAttribute="bottom" constant="622" id="eQZ-mh-hxj"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add City" id="RTV-GK-eIv">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="hxR-lf-gOo">
