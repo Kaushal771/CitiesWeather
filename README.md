@@ -11,11 +11,11 @@ CitiesWeather is an Application that uses UIKit and the openweather API to displ
 #### How the app looks upon loading up
 ![Alt text](/Images/CitiesWeatherDefaultScreen.png "Optional title")
 
-#### How the app looks when Add button is pressed
+#### How the app looks when '+' button is pressed and a City name is entered in the text field
 ![Alt text](/Images/AddCityScreen.png "Optional title")
 
 #### How the app looks when a city is added 
 ![Alt text](/Images/OneCityAdded.png "Optional title")
 
 #### How the app looks when multiple cities are added 
-![Alt text](/Images/OneCityAdded.png "Optional title")
+![Alt text](/Images/MultipleCitiesAdded.png "Optional title")
