@@ -4,4 +4,4 @@
 
 
 #### How the app looks upon loading up
-![Alt text](CitiesWeather/Images/CitiesWeatherDefaultScreen.png "Optional title")
+![Alt text](/Images/CitiesWeatherDefaultScreen.png "Optional title")
